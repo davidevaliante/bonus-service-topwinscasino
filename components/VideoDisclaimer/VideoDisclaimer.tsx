@@ -33,28 +33,34 @@ const VideoDiscalimer: FunctionComponent<Props> = ({ countryCode }) => {
       {translate()}
 
       {countryCode === "it" && (
-        <div
-          style={{
-            display: "flex",
-            background: "white",
-            padding: "1rem",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}
-        >
-          <LazyImage
-            width={90}
-            height={60}
-            alt="alert icon"
-            src="/images/adm.png"
-          />
+        <div>
+          <p style={{ margin: "1rem 0rem" }}>
+            Il gioco è vietato ai minori e può causare dipendenza patologica.
+            Gioca responsabilmente.
+          </p>
+          <div
+            style={{
+              display: "flex",
+              background: "white",
+              padding: "1rem",
+              justifyContent: "space-around",
+              alignItems: "center",
+            }}
+          >
+            <LazyImage
+              width={90}
+              height={60}
+              alt="alert icon"
+              src="/images/adm.png"
+            />
 
-          <LazyImage
-            width={70}
-            height={70}
-            alt="alert icon"
-            src="/images/18.svg"
-          />
+            <LazyImage
+              width={70}
+              height={70}
+              alt="alert icon"
+              src="/images/18.svg"
+            />
+          </div>
         </div>
       )}
     </Container>
